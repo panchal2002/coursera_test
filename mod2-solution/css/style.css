@@ -1,65 +1,62 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 body{
-    font-family: cursive; 
+    font-family: cursive;
 }
 h1{
     text-align: center;
     margin-top: 2rem;
 }
 .container{
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
     margin-top: 3rem;
+    width: 100%;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
+    box-sizing: border-box;
+}
+.Box-1-2{
+    display: flex;
 }
 .Box{
-    width: calc(100%/3);
-    display: inline;
-    margin: 0 15px;
-    border: 1px solid #000;
+    /* display: inline; */
     box-sizing: border-box;
-    padding-left: 10px;
-    background-color: gray;
+    background-color: peru;
+    width: 100%;
+    /* margin: 0 15px; */
+    padding-left:10px;
+    border: 1px solid #000;
 }
 .Box-heading{
-    background-color: palevioletred;
-    border: 1px solid black;
-    position: relative;
-    left:264px;
-    max-width: 8rem;
-    width: 100%;
-    box-sizing: border-box;
+    background-color: darkgrey;
+    border: 1px solid #000;
+    text-align: center;
+    float: right;
+    width: 8rem;
 }
-.heading-1{
-    margin-left:20px;
-    box-sizing: border-box;
+.Box p{
+    margin-top: 3rem;
 }
-.heading-2{
-    box-sizing: border-box;
-    margin-left: 36px;
-}
-.heading-3{
-    box-sizing: border-box;
-    margin-left:26px ;
-}
-
-@media screen and (min-width:765px)and (max-width:991px){
+@media screen and (min-width:767px) and (max-width:991px){
     .container{
-        width: 100%;
         display: grid;
         grid-template-columns: auto auto;
     }
+    #Box-3{
+        width: 208%;
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width:767px){
+    .container{
+        display: block;
+    }
     .Box{
-        width:100%;
-    }
-    .Box-heading{
-        position: relative;
-        left: 250px;
-    }
-    #Box-2{
-        width: 100px;
+        margin-top: 20px;
     }
 }

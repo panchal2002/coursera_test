@@ -24,11 +24,9 @@ h1{
     display: flex;
 }
 .Box{
-    /* display: inline; */
     box-sizing: border-box;
     background-color: peru;
     width: 100%;
-    /* margin: 0 15px; */
     padding-left:10px;
     border: 1px solid #000;
 }
